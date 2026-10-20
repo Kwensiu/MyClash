@@ -23,7 +23,7 @@
 | 原始位图参考                     | `Icons/png/<Name>.png`                                                                                                                                                                                                       |
 | 统一化矢量（对外提供的就是这套） | `Icons/svg/<Name>.svg`                                                                                                                                                                                                       |
 | 命名                             | PascalCase、无下划线/连字符；png 与 svg **同名一一对应**（当前 40 对）                                                                                                                                                       |
-| 引用格式                         | `https://fastly.jsdelivr.net/gh/AIsouler/MyClash@main/Icons/svg/<Name>.svg`；**JS 脚本里前缀已提为 `iconBaseUrl`**，写成 `` `${iconBaseUrl}<Name>.svg` ``；YAML 不支持变量，仍写全量                                         |
+| 引用格式                         | `https://fastly.jsdelivr.net/gh/Kwensiu/MyClash@main/Icons/svg/<Name>.svg`；**JS 脚本里前缀已提为 `iconBaseUrl`**，写成 `` `${iconBaseUrl}<Name>.svg` ``；YAML 不支持变量，仍写全量                                         |
 | 引用位置                         | `Script/mihomoScript.js`（43）、`Script/Script.js`（24）、`Config/mihomoConfig.yaml`（36）、`Config/mihomoConfigLite.yaml`（18）（共 121 处）                                                                                |
 | 规则集引用                       | 脚本里已提为 `const ruleSetBaseUrl`（`…/gh/appshubcc/bett-rules@meta/geo/`），写成 `` `${ruleSetBaseUrl}geosite/<name>.mrs` ``；`path-in-bundle` 是包内本地路径，与之无关；当前所有规则集都走这个前缀，无第三方全量 URL 例外 |
 | 回归测试                         | `node Test/run-tests.js`（改过脚本必跑，当前 194 项；含 ES2026 语法检查与 QuickJS 实跑 `main()`）                                                                                                                            |
@@ -811,7 +811,7 @@ Singapore 实测：`C1 (249.4028, 330.6168) R1 132.9217`（rms 0.72）、`C2 (34
 - 引用格式（**CDN 前缀固定不变**）：
 
 ```txt
-https://fastly.jsdelivr.net/gh/AIsouler/MyClash@main/Icons/svg/<Name>.svg
+https://fastly.jsdelivr.net/gh/Kwensiu/MyClash@main/Icons/svg/<Name>.svg
 ```
 
 - ⚠️ **不要再为 CDN 域名加直连规则**：原来的 `DOMAIN,cdn.jsdmirror.com,直连` 前置规则已于 2026-11-06 按用户要求删除，规则集与图标的下载域名统一走 `fastly.jsdelivr.net`，不要再补回 `DOMAIN`/`DOMAIN-SUFFIX` 直连规则。

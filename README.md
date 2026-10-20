@@ -73,7 +73,7 @@ FlClash 新版已切换为 Concord 内核，Concord 不读取的参数已从 con
 [mihomoScript.js](/Script/mihomoScript.js)，复制下面这个链接使用👇👇👇
 
 ```text
-https://raw.githubusercontent.com/AIsouler/MyClash/main/Script/mihomoScript.js
+https://raw.githubusercontent.com/Kwensiu/MyClash/main/Script/mihomoScript.js
 ```
 
 - **精简版**
@@ -81,12 +81,12 @@ https://raw.githubusercontent.com/AIsouler/MyClash/main/Script/mihomoScript.js
 [Script.js](/Script/Script.js)，复制下面这个链接使用👇👇👇
 
 ```text
-https://raw.githubusercontent.com/AIsouler/MyClash/main/Script/Script.js
+https://raw.githubusercontent.com/Kwensiu/MyClash/main/Script/Script.js
 ```
 
 |                                                                                   |
 | --------------------------------------------------------------------------------- |
-| ![img](https://raw.githubusercontent.com/AIsouler/MyClash/main/Image/import.webp) |
+| ![img](https://raw.githubusercontent.com/Kwensiu/MyClash/main/Image/import.webp) |
 
 ---
 
@@ -109,7 +109,7 @@ https://raw.githubusercontent.com/AIsouler/MyClash/main/Script/Script.js
 [mihomoConfig.yaml](/Config/mihomoConfig.yaml)，复制下面这个链接使用👇👇👇
 
 ```text
-https://raw.githubusercontent.com/AIsouler/MyClash/main/Config/mihomoConfig.yaml
+https://raw.githubusercontent.com/Kwensiu/MyClash/main/Config/mihomoConfig.yaml
 ```
 
 - **精简版**
@@ -117,7 +117,7 @@ https://raw.githubusercontent.com/AIsouler/MyClash/main/Config/mihomoConfig.yaml
 [mihomoConfigLite.yaml](/Config/mihomoConfigLite.yaml)，复制下面这个链接使用👇👇👇
 
 ```text
-https://raw.githubusercontent.com/AIsouler/MyClash/main/Config/mihomoConfigLite.yaml
+https://raw.githubusercontent.com/Kwensiu/MyClash/main/Config/mihomoConfigLite.yaml
 ```
 
 ---
@@ -128,12 +128,12 @@ https://raw.githubusercontent.com/AIsouler/MyClash/main/Config/mihomoConfigLite.
 
 |                                                                                  |                                                                                  |                                                                                  |                                                                                  |
 | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| ![img](https://raw.githubusercontent.com/AIsouler/MyClash/main/Image/IMG_1.webp) | ![img](https://raw.githubusercontent.com/AIsouler/MyClash/main/Image/IMG_2.webp) | ![img](https://raw.githubusercontent.com/AIsouler/MyClash/main/Image/IMG_3.webp) | ![img](https://raw.githubusercontent.com/AIsouler/MyClash/main/Image/IMG_4.webp) |
-| ![img](https://raw.githubusercontent.com/AIsouler/MyClash/main/Image/IMG_5.webp) | ![img](https://raw.githubusercontent.com/AIsouler/MyClash/main/Image/IMG_6.webp) | ![img](https://raw.githubusercontent.com/AIsouler/MyClash/main/Image/IMG_7.webp) | ![img](https://raw.githubusercontent.com/AIsouler/MyClash/main/Image/IMG_8.webp) |
+| ![img](https://raw.githubusercontent.com/Kwensiu/MyClash/main/Image/IMG_1.webp) | ![img](https://raw.githubusercontent.com/Kwensiu/MyClash/main/Image/IMG_2.webp) | ![img](https://raw.githubusercontent.com/Kwensiu/MyClash/main/Image/IMG_3.webp) | ![img](https://raw.githubusercontent.com/Kwensiu/MyClash/main/Image/IMG_4.webp) |
+| ![img](https://raw.githubusercontent.com/Kwensiu/MyClash/main/Image/IMG_5.webp) | ![img](https://raw.githubusercontent.com/Kwensiu/MyClash/main/Image/IMG_6.webp) | ![img](https://raw.githubusercontent.com/Kwensiu/MyClash/main/Image/IMG_7.webp) | ![img](https://raw.githubusercontent.com/Kwensiu/MyClash/main/Image/IMG_8.webp) |
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/chart?repos=aisouler/myclash&type=date&legend=top-left)](https://www.star-history.com/?repos=aisouler%2Fmyclash&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/chart?repos=kwensiu/myclash&type=date&legend=top-left)](https://www.star-history.com/?repos=kwensiu%2Fmyclash&type=date&legend=top-left)
 
 ## 致谢
 
