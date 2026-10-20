@@ -281,6 +281,11 @@ rule-providers:
     url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/reddit.mrs'
     path: './ruleset/reddit.mrs'
     path-in-bundle: 'geo/geosite/reddit.mrs'
+  tailscale:
+    <<: *rule_providers_domain
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/tailscale.mrs'
+    path: './ruleset/tailscale.mrs'
+    path-in-bundle: 'geo/geosite/tailscale.mrs'
   meta:
     <<: *rule_providers_domain
     url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/meta.mrs'
@@ -553,6 +558,14 @@ proxy-groups:
     <<: [*group_common_select, *proxies_default]
     icon: 'https://cdn.jsdmirror.com/gh/AIsouler/MyClash@main/Icons/svg/GitHub.svg'
 
+  - name: 'Reddit'
+    <<: [*group_common_select, *proxies_default]
+    icon: 'https://cdn.jsdmirror.com/gh/AIsouler/MyClash@main/Icons/svg/Reddit.svg'
+
+  - name: 'Tailscale'
+    <<: [*group_common_select, *proxies_direct]
+    icon: 'https://cdn.jsdmirror.com/gh/AIsouler/MyClash@main/Icons/svg/Tailscale.svg'
+
   - name: 'Microsoft'
     <<: [*group_common_select, *proxies_direct]
     icon: 'https://cdn.jsdmirror.com/gh/AIsouler/MyClash@main/Icons/svg/Microsoft.svg'
@@ -713,6 +726,9 @@ rules:
 
   # 私有网络直连
   - RULE-SET,private,直连
+  - DOMAIN-SUFFIX,ts.net,直连
+  - IP-CIDR,100.64.0.0/10,直连,no-resolve
+  - IP-CIDR6,fd7a:115c:a1e0::/48,直连,no-resolve
 
   # 国内直连
   - RULE-SET,geolocation-cn,直连
@@ -750,6 +766,8 @@ rules:
   - RULE-SET,twitter,Twitter
   - RULE-SET,twitter_ip,Twitter,no-resolve
   - RULE-SET,reddit,Reddit
+  - PROCESS-NAME-WILDCARD,*tailscale*,Tailscale
+  - RULE-SET,tailscale,Tailscale
   - RULE-SET,meta,Meta
   - RULE-SET,facebook_ip,Meta,no-resolve
   - RULE-SET,line,Line
