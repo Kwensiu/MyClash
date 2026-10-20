@@ -34,6 +34,7 @@ const ruleOptionsEnable = {
   Steam: true, // Steam游戏平台
   TikTok: true, // TikTok视频平台
   Twitter: true, // Twitter社交平台
+  Reddit: true, // Reddit社交平台
   Meta: true, // Meta服务
   Line: true, // Line通讯软件
   Netflix: true, // Netflix视频平台
@@ -457,6 +458,20 @@ const serviceConfigs = [
     },
     icon: `${iconBaseUrl}GitHub.svg`,
     rules: ['RULE-SET,github,GitHub'],
+  },
+  {
+    name: 'Reddit',
+    baseOption: selectBaseOption,
+    providers: {
+      reddit: {
+        ...ruleProviderCommonDomain,
+        url: `${ruleSetBaseUrl}geosite/reddit.mrs`,
+        path: './ruleset/reddit.mrs',
+        'path-in-bundle': 'geo/geosite/reddit.mrs',
+      },
+    },
+    icon: `${iconBaseUrl}Reddit.svg`,
+    rules: ['RULE-SET,reddit,Reddit'],
   },
   {
     name: 'Microsoft',

@@ -271,6 +271,11 @@ rule-providers:
     url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geoip/twitter.mrs'
     path: './ruleset/twitter_ip.mrs'
     path-in-bundle: 'geo/geoip/twitter.mrs'
+  reddit:
+    <<: *rule_providers_domain
+    url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/reddit.mrs'
+    path: './ruleset/reddit.mrs'
+    path-in-bundle: 'geo/geosite/reddit.mrs'
   meta:
     <<: *rule_providers_domain
     url: 'https://cdn.jsdmirror.com/gh/appshubcc/bett-rules@meta/geo/geosite/meta.mrs'
@@ -571,6 +576,10 @@ proxy-groups:
     <<: [*group_common_select, *proxies_default]
     icon: 'https://cdn.jsdmirror.com/gh/AIsouler/MyClash@main/Icons/svg/Twitter.svg'
 
+  - name: 'Reddit'
+    <<: [*group_common_select, *proxies_default]
+    icon: 'https://cdn.jsdmirror.com/gh/AIsouler/MyClash@main/Icons/svg/Reddit.svg'
+
   - name: 'Meta'
     <<: [*group_common_select, *proxies_default]
     icon: 'https://cdn.jsdmirror.com/gh/AIsouler/MyClash@main/Icons/svg/Meta.svg'
@@ -747,6 +756,7 @@ rules:
   - RULE-SET,tiktok_ip,TikTok,no-resolve
   - RULE-SET,twitter,Twitter
   - RULE-SET,twitter_ip,Twitter,no-resolve
+  - RULE-SET,reddit,Reddit
   - RULE-SET,meta,Meta
   - RULE-SET,facebook_ip,Meta,no-resolve
   - RULE-SET,line,Line
