@@ -35,6 +35,7 @@ const ruleOptionsEnable = {
   TikTok: true, // TikTok视频平台
   Twitter: true, // Twitter社交平台
   Reddit: true, // Reddit社交平台
+  Tailscale: true, // Tailscale组网服务
   Meta: true, // Meta服务
   Line: true, // Line通讯软件
   Netflix: true, // Netflix视频平台
@@ -66,6 +67,11 @@ const ruleOptionsEnable = {
 const prefixRules = [
   // 规则集下载域名，避免出现鸡蛋问题
   'DOMAIN,cdn.jsdmirror.com,直连',
+
+  // Tailscale 组网地址直连，避免 MagicDNS 和节点互访被代理
+  'DOMAIN-SUFFIX,ts.net,直连',
+  'IP-CIDR,100.64.0.0/10,直连,no-resolve',
+  'IP-CIDR6,fd7a:115c:a1e0::/48,直连,no-resolve',
 
   // 私有网络直连
   'RULE-SET,private,直连',
@@ -472,6 +478,21 @@ const serviceConfigs = [
     },
     icon: `${iconBaseUrl}Reddit.svg`,
     rules: ['RULE-SET,reddit,Reddit'],
+  },
+  {
+    name: 'Tailscale',
+    baseOption: selectBaseOption,
+    direct: true,
+    providers: {
+      tailscale: {
+        ...ruleProviderCommonDomain,
+        url: `${ruleSetBaseUrl}geosite/tailscale.mrs`,
+        path: './ruleset/tailscale.mrs',
+        'path-in-bundle': 'geo/geosite/tailscale.mrs',
+      },
+    },
+    icon: `${iconBaseUrl}Tailscale.svg`,
+    rules: ['PROCESS-NAME-WILDCARD,*tailscale*,Tailscale', 'RULE-SET,tailscale,Tailscale'],
   },
   {
     name: 'Microsoft',
