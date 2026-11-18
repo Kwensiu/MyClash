@@ -74,7 +74,6 @@ const prefixRules = [
   'IP-CIDR,100.64.0.0/10,直连,no-resolve',
   'IP-CIDR6,fd7a:115c:a1e0::/48,直连,no-resolve',
 
-
   // 私有网络直连
   'RULE-SET,private,直连',
 
